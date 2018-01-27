@@ -10,6 +10,70 @@ header {
   justify-content: space-between;
 }
 
+header ul {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: underline;
+  color: blue;
+}
+
+header ul li a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  color: blue;
+}
+
 .main-content {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content h3 {
+  flex-basis: 100%;
+}
+
+.non-accessible-form {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.non-accessible-form div {
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.non-accessible-form button {
+  align-self: flex-end;
+  width: 100px;
+}
+
+.accessible-form {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.accessible-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.accessible-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  background-color: teal;
+  color: white;
+  font-size: 1em;
 }
