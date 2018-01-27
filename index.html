@@ -20,6 +20,7 @@
       </header>
       <div class="main-content">
         <h3>Non accessible friendly input form</h3>
+        <p>You will notice that this form is difficult to read. Imagine if you had low vision and had to increase the browser zoom to 200%, or even 400%. It would basically be impossible to find which input went with which label. Furthermore, these labels are in 'span' tags, not 'label' tags that screen readers will be able to focus on and communicate the appropriate information to the user. The radio buttons have 'span' tags with label names near each of them, but nothing to differentiate which button the label is for. The 'Submit' button is on the left side and may be difficult to find for some users.</p>
         <form class="non-accessible-form" action="index.html" method="post">
           <div>
             <span>Name</span>
@@ -94,6 +95,7 @@
           <button type="button" name="button">Submit!</button>
         </form>
         <h3>Accessible friendly input form</h3>
+        <p>This form is much more user friendly. The labels for the inputs use the correct 'label' tag which will allow screen readers and text-to-voice devices to know which label goes with which input. Also, the labels are stacked very close to the input form so as to not confuse the user. The radio buttons each have their own label so a fieldset and legend are used to label the group. The 'Remember me?' checkbox is closer to the 'Submit button' to convey that they are related. The 'Submit' button is also on the left side where all the other prompts for actions are. The button is a little larger and uses a background color (to signify importance) with a high contrast text color for low-vision users. </p>
         <form class="accessible-form">
           <div>
             <label for="user-name-input">Name: </label>
